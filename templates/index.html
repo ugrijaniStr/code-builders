@@ -1,0 +1,452 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../css/home.css">
+    <link rel = "stylesheet" href = "../css/style.css">
+    <link rel = "stylesheet" href = "../css/animations.css">
+    <link rel = "stylesheet" href = "../css/highlight.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/4ef9093d57.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
+    <title>Code Builders - Web Development service</title>
+</head>
+<body>
+    <div class="mainArea">
+        <div id="popup" class="socialMedia">
+            <div class="socialMediaBox">
+                <div class="socialMediaItems">
+                    <i class = "fa fa-xmark" onclick = "closePopUp()"></i>
+                </div>
+                <div class="socialMediaItems">
+                    <h1>Social Media</h1>
+                </div>
+                <div class="socialMediaItems">
+                    <div class="socialItems">
+                        <p>
+                           <i class="fa-brands fa-github"></i>
+                        </p>
+                    </div>
+                    <div class="socialItems">
+                        <p>
+                           <i class="fa-brands fa-instagram"></i>
+                        </p>
+                    </div>
+                    <div class="socialItems">
+                        <p>
+                           <i class="fa-brands fa-discord"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "navbar">
+            <div class="navItems">Code Builders</div>
+            <div class="navItems"><a href = "#worksBox">Works</a></div>
+            <div class="navItems"><a href = "#statsBox">Stats</a></div>
+            <div class="navItems"><a href = "#teamBox">Team</a></div>
+            <div class="navItems"><a href = "#infoBox">Order</a></div>
+            <div class="navItems"><button onclick = "popUp();" id = "socialBtn">Social</button></div>
+        </div>
+        <div id="mainBox">
+            <div class="parentBox">
+                <div class="childBox">
+                    <div class="titleBox">
+                        <h1>CodeBuilders - Official Website</h1>
+                    </div>
+                    <div class="textBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quisquam eligendi aliquam, consectetur vel eaque ipsum reprehenderit inventore soluta possimus similique officia, dolores natus eum delectus voluptates modi aspernatur nesciunt!</p>
+                    </div>
+                    <div class="btnsBox">
+                        <button id = "projectsBtn">Works</button>
+                        <button id = "orderBtn">Order</button>
+                    </div>
+                </div>
+                <div class="childBox">
+                    <model-viewer 
+                        src="../brain.glb" 
+                        alt="A 3D model" 
+                        auto-rotate 
+                        camera-controls 
+                        disable-zoom 
+                        interaction-prompt="none"
+                        auto-rotate-speed= 100
+                        style="width: 100%; height: 100%;">
+                    </model-viewer>
+                </div>
+                <div class="childBox">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "titleArea">
+            <h1>Welcome to area of <b id = "typingX">CodeBuilders</b>.</h1>
+          </div>
+        <div id="contentBox">
+            <div class="contentChild">
+                <div class="contentTitle">
+                    Why choose <b>CodeBuilders</b>?
+                </div>
+                <div class="contentText">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                    <br><br><br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                    <br><br><br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                </div>
+            </div>
+            <div class="contentChild">
+                <div>
+                    <div>
+                        <h1>Speed</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur delectus harum expedita recusandae vitae adipisci placeat? Adipisci doloribus eligendi fuga. Velit facere repellendus dolore numquam molestias cupiditate perspiciatis doloremque id.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h1>Skills</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A delectus qui animi labore ducimus, cumque veritatis fugiat ratione maiores non amet officiis. Consequuntur quod, quas incidunt iusto distinctio tenetur earum?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h1>Modern</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa enim voluptas accusamus nisi assumenda, modi ut, pariatur minus quis optio perspiciatis, nobis ab possimus? Distinctio eius reiciendis quod autem in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "titleArea">
+            <h1>Welcome to area of <b id = "typingX">Informations</b>.</h1>
+          </div>
+        <div id="infoBox">
+            <div class="infoChild">
+                <div class = "codeBox">
+                    <div>
+                      <i class="fa-brands fa-python"></i>
+                      <p>skills.py</p>
+                    </div>
+                    <pre>
+<b>import</b> os
+
+skills = [<b>'python'</b>, <b>'javascript'</b>', <b>'html'</b>, <b>'css'</b>, <b>'react.js'</b>, <b>'flask'</b>]
+
+<b>class</b> <b>Main</b>:
+    <b>@staticmethod</b>
+    <b>def</b> <b>main_function</b>(x: <b>str</b>) -> <b>None</b>:
+        <b>if</b>(os.name == <b>'nt'</b>):
+            os.system(<b>'cls</b>)
+        <b>else</b>:
+            os.system(<b>clear</b>)
+    
+        skills.append(x)
+
+        <b>print</b>(<b>'Skills -> </b><b>\n</b><b>'</b>)
+
+        <b>for</b> skill <b>in</b> skills:
+            <b>print</b>(skill)
+
+<b>if</b>(__name__ == <b>'__main__'</b>):
+    Main.main_function(<b>'three.js'</b>)
+            </pre>
+                </div>
+            </div>
+            <div class="infoChild">
+                <div class="contentTitle">
+                    What does <b>CodeBuilders</b> use ?
+                </div>
+                <div class="contentText">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                    <br><br><br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                </div>
+            </div>
+            <div class="infoChild">
+                <div class="langItems">
+                    <i class="fa-brands fa-python"></i>
+                    <b>Python</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-brands fa-js"></i>
+                    <b>JavaScript</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <b>CSS</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-brands fa-react"></i>
+                    <b>React.JS</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-solid fa-pepper-hot"></i>
+                    <b>Flask</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-brands fa-golang"></i>
+                    <b>GoLang</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-brands fa-html5"></i>
+                    <b>HTML</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-solid fa-c"></i>
+                    <b>C/C++</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-solid fa-cubes"></i>
+                    <b>Three.JS</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-solid fa-rocket"></i>
+                    <b>Socket.IO</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-solid fa-file-code"></i>
+                    <b>JSON</b>
+                </div>
+                <div class="langItems">
+                    <i class="fa-solid fa-atom"></i>
+                    <b>Electron.JS</b>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class = "titleArea">
+            <h1>Welcome to area of <b id = "typingX">Projects</b>.</h1>
+          </div>
+        <div id="worksBox">
+            <div class="worksItems">
+                <div class="contentTitle">
+                    Projects from <b>CodeBuilders</b> ?
+                </div>
+                <div class="contentText">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                    <br><br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                    <br><br>
+                    <button class = "moreBtn" id = "projectsBtn">More</button>
+                </div>
+            </div>
+            <div class="worksItems">
+                <div class="worksToolBox">
+                    <div>
+                        <div id = "chtml">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div>
+                            <div>
+                                <div id = "py"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id = "cr">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div>
+                            <div>
+                                <div id = "react"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id = "cjs">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div>
+                            <div>
+                                <div id = "js"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="worksItems">
+                <div class="projectsItems">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <div class="worksContent">
+                            <h1>ugrijaniStr - Portfolio</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis ipsum at cum esse illum!</p>
+                        </div>
+                        <div class="worksDate">
+                            <div id = "green">12.3.2023.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectsItems">
+                    <div>
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <div class="worksContent">
+                            <h1>k4jm4k - dashboard</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis ipsum at cum esse illum!</p>
+                        </div>
+                        <div class="worksDate">
+                            <div id = "yellow">1.5.2022.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectsItems">
+                    <div>
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <div>
+                        <div class="worksContent">
+                            <h1>Beuty Salon</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis ipsum at cum esse illum!</p>
+                        </div>
+                        <div class="worksDate">
+                            <div id = "red">10.8.2025.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "titleArea">
+            <h1>Welcome to area of <b id = "typingX">Analytics</b>.</h1>
+          </div>
+        <div id="statsBox">
+            <div class="statsItems">
+                <canvas id="myChart" width="400" height="200"></canvas>
+            </div>
+            <div class="statsItems">
+                <div class = "statsText">
+                    <div class="statsItemsInfo">
+                        <div class="contentTitle">
+                            Analytics of <b>CodeBuilders</b> ?
+                        </div>
+                        <div class="contentText">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                            <br><br>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                        </div>
+                    </div>
+                </div>
+                <div class = "statsNumbers">
+
+                </div>
+            </div>
+        </div>
+        <div class = "titleArea">
+            <h1>Welcome to area of <b id = "typingX">Staff</b>.</h1>
+          </div>
+        <div id="teamBox">
+            <div class="teamItems">
+                <div class="teamItemsText">
+                    <div class="contentTitle">
+                        Staff team of <b>CodeBuilders</b> ?
+                    </div>
+                    <div class="contentText">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                        <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                    </div>
+                </div>
+                <div class="teamItemsInfo">
+                    <div class = "staffRanksContent">
+                        <h1>Staff team ranks</h1>
+                        <p>You can see all the ranks in our staff here.</p>
+                    </div>
+                    <div class = "staffRanksBox">
+                        <div class = "staffRanks">
+                            <div><i class="fa-solid fa-user-tie"></i></div>
+                            <div>Manager</div>
+                        </div>
+                        <div class = "staffRanks">
+                            <div><i class="fa-solid fa-code"></i></div>
+                            <div>Developer</div>
+                        </div>
+                        <div class = "staffRanks">
+                            <div><i class="fa-solid fa-lightbulb"></i></div>
+                            <div>Marketing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teamItems">
+                <div>
+                    <div>
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h1>Manager - Rank</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, reiciendis autem excepturi voluptates voluptatum itaque necessitatibus temporibus. Enim natus ex quidem doloribus at, exercitationem iure eaque obcaecati maxime omnis. Voluptatum.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <h1>Developer - Rank</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, reiciendis autem excepturi voluptates voluptatum itaque necessitatibus temporibus. Enim natus ex quidem doloribus at, exercitationem iure eaque obcaecati maxime omnis. Voluptatum.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div>
+                        <h1>Marketing - Rank</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, reiciendis autem excepturi voluptates voluptatum itaque necessitatibus temporibus. Enim natus ex quidem doloribus at, exercitationem iure eaque obcaecati maxime omnis. Voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "titleArea">
+            <h1>Welcome to area of <b id = "typingX">Contact</b>.</h1>
+          </div>
+        <div id = "contactBox">
+            <div class="contactBoxes">
+                <div class="contactChild">
+                    <div class="contentTitle">
+                        Staff team of <b>CodeBuilders</b> ?
+                    </div>
+                    <div class="contentText">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                        <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nam optio accusamus ea mollitia neque expedita saepe, ullam fuga at, sit officia nobis laboriosam eius dolorum repellat aliquid? Consectetur, totam?
+                    </div>
+                </div>
+                <div class="contactChild">
+                    <div class="contactForm">
+                        <h1>Order Form</h1>
+                        <input type="text" placeholder = "John Doe">
+                        <input type="email" placeholder = "example@gmail.com">
+                        <input type="number" placeholder = "+385 989 23 8909">
+                        <textarea placeholder = "I need website with..."></textarea>
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contactBoxes">
+                <div class="contactItems">
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+                <div class="contactItems">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="contactItems">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="contactItems">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="contactItems">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "footerBox">
+            <footer>SEKS SA MALIM MAGARCIMA</footer>
+        </div>
+    </div>
+    <script src = "../script.js"></script>
+</body>
+</html>
